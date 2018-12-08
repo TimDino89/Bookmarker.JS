@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bookmarker</title>
+
+  <link rel="icon" href="favicon.png">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="fetchBookmark()">
+
+  <!-- Main -->
+ <main class="main">
+  <div class="grid">
+      <div class="bookmark__headline">
+          <h2 class="bookmark__title">Bookmarker</h2>
+          <span class="bookmark__subtitle">Save your bookmarks</span>
+        </div>
+      
+        <!-- Bookmarks form -->
+        <form class="bookmark__form">
+          <label class="bookmark__label">Site Name:
+            <input type="text" class="input input__name" placeholder="Website name" autocomplete="on">
+          </label>
+          <label class="bookmark__label">Site URL:
+            <input type="text" class="input input__adress" placeholder="Website URL" autocomplete="on">
+          </label>
+          <button class="btn btn__add" type="submit">Add Bookmark</button>
+        </form>
+      <!-- End Bookmarks form -->
+      
+        <div class="bookmark__items">
+          <div class="bookmark__headline">
+              <h3 class="bookmark__subtitle bookmark__subtitle--font">Your Bookmarks</h3>
+          </div>
+          <ul class="bookmark__list">
+            <!-- <li class="bookmark__item">
+            <h4 class="bookmark__name">Some Name</h4>
+            <button class="btn btn__visit">Visit</button>
+            <button class="btn btn__delete">Delete</button>
+          </li> -->
+        </ul>
+        </div>
+  </div>
+ </main>
+
+<script src="main.js"></script>
+
+</body>
+</html>
